@@ -9,8 +9,11 @@ function App() {
       <h1>React カウンター</h1>
       <p>カウント: {count}</p>
       <button onClick={() => setCount(count + 1)}>
-        カウントアップ
+        増やす
       </button>
+      {
+        count == 5 && <p>５回クリックしたよ</p>
+      }
     </div>
   );
 }
